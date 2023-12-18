@@ -19,10 +19,8 @@ import { Link } from "react-router-dom"
 import { createUserAccount } from "@/lib/appwrite/api"
 import { ID } from 'appwrite'
 
-export interface SignUpProps{
-  autocomplete:string
-}
-const SignUp: React.FC<SignUpProps>=() => {
+
+const SignUp=() => {
   console.log(ID.unique())
   // const isLoding=false
   const form = useForm<z.infer<typeof SignupValidation >>({
